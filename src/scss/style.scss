@@ -1,8 +1,12 @@
 @import 'bootstrap';
+@import 'components/meal';
+@import 'components/card';
+@import 'abstracts/helpers';
+@import 'components/navbar';
 body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color:#181a18;
     h1{
-        color: #894;
+        color: green;
     }
 }

@@ -1,0 +1,48 @@
+@import '../abstracts/variables';
+.mealCon{
+    width:375px;
+}
+.meal {
+    height: 100%; 
+    border: 1px solid #ddd; 
+    border-radius: 8px;
+    max-width: 375px;
+    overflow: hidden;
+   
+  }
+  
+  .meal__img-con {
+    width: 100%;
+    height: 254px; 
+    overflow: hidden;
+  }
+  
+  .meal__img-con img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+  }
+  
+  .meal__name {
+    padding: 16px;
+    text-align: left;
+    background-color: #ffffff; 
+    h2 {
+      font-size: $font-32px;
+      margin: 0.5rem 0;
+    }
+    a {
+      display: inline-block;
+      margin-top: 8px;
+      color:$color-secondary;
+      font-size: $font-16px;
+      text-decoration: none;
+    }
+  }
+  
+ 
+ 
+  
+  a:hover {
+    text-decoration: underline;
+  }

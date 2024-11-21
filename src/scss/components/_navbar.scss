@@ -1,0 +1,15 @@
+@import '../abstracts/variables';
+.navbar{
+    background-color: $color-primary;
+    .navbar-brand{
+        color:$color-green;
+        font-size: $font-24px;
+        .fa-bowl-food{
+            color:#F39D1A;
+        }
+    }
+    .nav-item a{
+            font-size: $font-20px;
+            color:$color-black;
+    }
+}
