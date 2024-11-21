@@ -5,39 +5,21 @@ const form = () =>{
       <h1 class="mb-4">Find Your Favorite Meals</h1>
       <form class="row g-3 justify-content-center">
         <div class="col-md-4">
-          <input type="text" class="form-control" placeholder="Search by name or ingredient" aria-label="Search">
+          <input type="text" class="form-control searchTerm" placeholder="Search by name or ingredient" aria-label="Search">
         </div>
          <div class="col-md-2">
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="searchBy[]" value="name" id="searchByName" checked>
+            <input class="form-check-input search-radio" type="radio" name="searchBy" value="name" id="searchByName" checked>
             <label class="form-check-label" for="searchByName">
               Search by Name
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="searchBy[]" value="ingredient" id="searchByIngredient">
+            <input class="form-check-input search-radio" type="radio" name="searchBy" value="ingredient" id="searchByIngredient">
             <label class="form-check-label" for="searchByIngredient">
               Search by Ingredient
             </label>
           </div>
-        </div>
-        <div class="col-md-3">
-          <select class="form-select" aria-label="Select category">
-            <option value="" selected>All Categories</option>
-            <option value="Breakfast">Breakfast</option>
-            <option value="Chicken">Chicken</option>
-            <option value="Lamb">Lamb</option>
-            <option value="Beef">Beef</options>
-            <option value="Pork">Pork</options>
-            <option value="Goat">Goat</options>
-            <option value="Seafood">Seafood</options>
-            <option value="Miscellaneous">Miscellaneous</options>
-            <option value="Pasta">Pasta</options>
-            <option value="Desserts">Desserts</option>
-            <option value="Starter">Starter</option>
-            <option value="Vegan">Vegan</option>
-            <option value="Vegetarian">Vegetarian</option>
-          </select>
         </div>
         <div class="col-md-auto">
           <button type="submit" class="btn btn-primary">Search</button>

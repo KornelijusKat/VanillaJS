@@ -19,7 +19,7 @@ class MealApi{
     }
     getMealByName(name){
         return ajaxService(this.constructUrl(`/search.php?s=${name}`)).then(response=>{
-            return response.meals[0];
+            return response.meals;
         })
     }
     getMealsByFirstLetter(letter){

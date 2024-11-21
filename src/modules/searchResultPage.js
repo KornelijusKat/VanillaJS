@@ -5,7 +5,6 @@ const searchResultsPage = (meals) =>{
     contentBlock.innerHTML = " ";
     const row = document.createElement('div');
     row.className = 'row d-flex justify-content-between';
-    console.log(contentBlock);
     for (let meal of meals){
         let mealDiv = document.createElement('div');
         mealDiv.className = "col-4 mt-5 mealCon"
@@ -19,10 +18,7 @@ const searchResultsPage = (meals) =>{
                     <a href="#">View Recipe</a>
                 </div>
             </div>`;
-       
-        console.log(mealDiv);
         row.appendChild(mealDiv)
-      
     }
     contentBlock.appendChild(row);
 }
