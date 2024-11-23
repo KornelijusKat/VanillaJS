@@ -1,0 +1,9 @@
+@import '../abstracts/variables';
+@mixin orange-button($padding:10px 20px,$font-size:16px, $border-radius:2em, $color:#fff){
+    background-color: $color-secondary;
+    padding:$padding;
+    font-size:$font-size;
+    border-radius: $border-radius;
+    border:none;
+    color:$color;
+}

@@ -1,6 +1,4 @@
 import MealApi from "../Api/MealApi";
-import filterSubmitEvent from "./filterSubmitEvent";
-import renderStorageMeals from "./renderStorageMeals";
 import searchResultsPage from "./searchResultPage";
 import storeSearches from "./storeSearches";
 const formSubmitEvent = ()=>{
@@ -9,8 +7,15 @@ const formSubmitEvent = ()=>{
         e.preventDefault();
         const radioMarks = document.querySelector('.form-select');
         let selectedValue = radioMarks.value;
+        console.log(selectedValue);
         const mealService = new MealApi('https://www.themealdb.com/api/json/v1/1');
         const searchTerm = document.querySelector('.searchTerm').value;
+        if(!searchTerm){
+            document.querySelector('main').innerHTML = `
+            <p>Please input search term</p>
+            `;
+            return;
+        }
         storeSearches(queryArray, searchResultsPage);
         const parsedData =JSON.parse(localStorage.getItem(`${selectedValue}${searchTerm}`)); 
         if(parsedData !== null){
@@ -19,6 +24,7 @@ const formSubmitEvent = ()=>{
         }
         else if(selectedValue == "ingredient"){
             mealService.getMealByIngredient(searchTerm).then((meals)=>{
+                console.log(meals);
                 if(!meals){
                     document.querySelector('main').innerHTML = `
                     <p>No results found for ${searchTerm} </p>
@@ -37,6 +43,7 @@ const formSubmitEvent = ()=>{
         }
         else if(selectedValue == "Category"){
             mealService.getMealByCategory(searchTerm).then((meals)=>{
+                console.log(meals);
                 if(!meals){
                     document.querySelector('main').innerHTML = `
                     <p>No results found for ${searchTerm} </p>
@@ -49,13 +56,13 @@ const formSubmitEvent = ()=>{
                 Promise.all(mealDetailsPromise).then((foundMeal) =>{
                     localStorage.setItem(`Category${searchTerm}`,JSON.stringify(foundMeal));
                     localStorage.setItem(`meals`,JSON.stringify(foundMeal));
-                    alert(`Error: error.message`);
                     searchResultsPage(foundMeal);
                 })
             })
         }
         else if(selectedValue == "name"){
             mealService.getMealByName(searchTerm).then((meals)=>{
+                console.log(meals);
                 if(!meals){
                     document.querySelector('main').innerHTML = `
                     <p>No results found for ${searchTerm} </p>

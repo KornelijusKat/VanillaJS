@@ -1,12 +1,12 @@
 @import 'bootstrap';
 @import 'components/meal';
 @import 'components/card';
-@import 'abstracts/helpers';
 @import 'components/navbar';
 @import 'components/meal-details';
 @import 'layouts/mealDetails';
+@import 'layouts/home';
 body{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: "Inter", sans-serif;
     color:#181a18;
     h1{
         color: green;

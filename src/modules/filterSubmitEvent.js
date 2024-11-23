@@ -2,14 +2,9 @@ import filterMeals from "./filterMeals";
 import searchResultsPage from "./searchResultPage";
 
 const filterSubmitEvent = (meals)=>{
-    console.log('hi');
-    console.log(meals);
     const mealsForFilter = JSON.parse(JSON.stringify(meals));
     document.querySelector(".filterForm").addEventListener('submit', (e) =>{
         e.preventDefault();
-        console.log('kebab');
-        console.log(meals);
-       
         const ingredient = document.getElementById("ingredientInput").value;
         const category = document.getElementById("categoryInput").value;
         const area = document.getElementById("areaInput").value;

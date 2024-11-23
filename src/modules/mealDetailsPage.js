@@ -1,5 +1,3 @@
-import MealApi from "../Api/MealApi";
-
 const mealDetailsPage = (meal) =>{
     const createdMeal = document.createElement('div');
     createdMeal.className = 'row';

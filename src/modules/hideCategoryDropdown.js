@@ -5,8 +5,14 @@ const hideCategoryDropdown = () =>{
         if (searchType === "Category") {
             displayCategoryDropdown();
         } else {
-            document.getElementById('categoryDropdown').style.display = 'none'; 
+          
         }
       });
+      document.addEventListener('click', (event) => {
+        const isClickInsideSearchBar = searchBar.contains(event.target);
+        if (!isClickInsideSearchBar) {
+            document.getElementById('categoryDropdown').style.display = 'none'; 
+        }
+    });
     }
 export default hideCategoryDropdown
