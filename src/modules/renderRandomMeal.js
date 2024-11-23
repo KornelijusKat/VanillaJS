@@ -1,7 +1,7 @@
 import MealApi from "../Api/MealApi";
 
 const renderRandomMeals = ()=>{
-    document.querySelector('.recipe').addEventListener('click',(e)=>{
+    document.querySelector('.home').addEventListener('click',(e)=>{
         e.preventDefault();
         const mealCon = document.createElement('div');
         mealCon.className = "row d-flex justify-content-between"
@@ -16,6 +16,7 @@ const renderRandomMeals = ()=>{
                 </div>
             </div>
         `
+        document.querySelector('main').innerHTML = ""
         document.querySelector('main').appendChild(mealCon);
         for(let x = 0;x<6;x++){
             let newMeal = new MealApi('https://www.themealdb.com/api/json/v1/1');

@@ -26,10 +26,10 @@
                         </ul>
                       </div>
                       <ul class="navbar-nav d-flex flex-row ms-auto d-none d-lg-flex">
-                        <form class="d-flex position-relative" id="searchForm" onsubmit="handleSearch(event)">
+                        <form class="d-flex position-relative" id="searchForm">
                             <select class="form-select me-2" id="searchTypeSelector" aria-label="Search Type">
-                                <option value="category" selected>Category</option>
-                                <option value="name">Name</option>
+                                <option value="name" selected>Name</option>
+                                <option value="Category">Category</option>
                                 <option value="ingredient">Ingredient</option>
                             </select>
                             <input 
@@ -40,7 +40,7 @@
                                 autocomplete="off" 
                                 aria-label="Search"
                             >
-                            <ul id="categoryDropdown" class="dropdown-menu w-100" style="display: none;"></ul>
+                            <ul id="categoryDropdown" class="dropdown-menu w--50" style="display: none;"></ul>
                             <button class="btn btn-outline-primary ms-2" type="submit">Search</button>
                         </form>
                         <li class="nav-item me-3"><a href="#" class="nav-link"><i class="fa-solid fa-magnifying-glass"></i></a></li>
@@ -82,6 +82,6 @@
                 </div>
             </footer>
         </div>
-        <script src="bundle.js"></script>
+        <script src="app.js"></script>
     </body>
 </html>
