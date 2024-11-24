@@ -1,3 +1,4 @@
+import searchService from "./searchService";
 const displaySearches = ()=>{
     // user icon functions as search
     document.querySelector('.user-history').addEventListener('click', (e)=>{
@@ -18,9 +19,20 @@ const displaySearches = ()=>{
         const listGroup = document.createElement('ul');
         listGroup.className = 'list-group';
         for(const search of searches){
+            
             const termItem = document.createElement('li');
+            const link = document.createElement('a');
+            link.className = "ms-2"
+            link.textContent ="search";
+            link.href = "#";
+            const [key, value] = search.split(' ');
+            link.addEventListener('click',(e)=>{
+                e.preventDefault();
+                searchService(key, value);
+            })
             termItem.className = 'list-group-item';
             termItem.textContent = search;
+            termItem.appendChild(link);
             listGroup.appendChild(termItem);
         }
         cardBody.appendChild(listGroup);
