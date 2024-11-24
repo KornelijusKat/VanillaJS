@@ -18,7 +18,7 @@ const filterForm = () =>{
       </div>
 
       <div class="col-12 text-end mt-3">
-        <button type="submit" class="btn btn-primary">Search</button>
+        <button type="submit" id='filterBtn' class="btn btn-primary">Search</button>
       </div>
     </form>
   </div>`

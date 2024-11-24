@@ -24,7 +24,7 @@ const formSubmitEvent = ()=>{
         }
         else if(selectedValue == "ingredient"){
             mealService.getMealByIngredient(searchTerm).then((meals)=>{
-                console.log(meals);
+                
                 if(!meals){
                     document.querySelector('main').innerHTML = `
                     <p>No results found for ${searchTerm} </p>

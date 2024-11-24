@@ -9,10 +9,10 @@ const renderSixRandomMeals = () =>{
             <div class='row discover'>
                 <div class='col discover heading'>
                     <h2>Discover, Create, Share</h2>
-                    <p>Check our most popular recipes of this week</p>
+                    <p>Check out some random meals of the week</p>
                 </div>
                 <div class='col text-end'>
-                    <button class="btn btn-primary" id='butt'>Randomize</button>
+                    <button class="btn btn-primary" id='button'>Randomize</button>
                 </div>
             </div>
         `

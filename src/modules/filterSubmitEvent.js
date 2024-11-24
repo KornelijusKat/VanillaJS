@@ -3,8 +3,11 @@ import searchResultsPage from "./searchResultPage";
 
 const filterSubmitEvent = (meals)=>{
     const mealsForFilter = JSON.parse(JSON.stringify(meals));
-    document.querySelector(".filterForm").addEventListener('submit', (e) =>{
+    console.log('hi');
+    console.log(document.querySelector(".filterForm"));
+    document.querySelector("#filterBtn").addEventListener('click', (e) =>{
         e.preventDefault();
+        console.log('work');
         const ingredient = document.getElementById("ingredientInput").value;
         const category = document.getElementById("categoryInput").value;
         const area = document.getElementById("areaInput").value;
@@ -15,7 +18,7 @@ const filterSubmitEvent = (meals)=>{
                 <p>No filter results found</p>
             </div>
             `;
-            return;
+            return
         }
         searchResultsPage(filteredMeals);
     })

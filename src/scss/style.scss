@@ -14,4 +14,36 @@ body{
     .container{
         max-width: 1240px;
     }
+    footer {
+        background-color: #ffffff; 
+      }
+      
+      .logo {
+        font-size: 24px;
+        font-weight: bold;
+        display: inline-flex;
+        align-items: center;
+      }
+      
+      .logo span {
+        font-size: 30px;
+        margin-right: 10px;
+      }
+      
+      footer h5 {
+        margin-bottom: 15px;
+      }
+      
+      footer ul li a:hover {
+        color: #6ecc63; /* Light green hover effect */
+      }
+      
+      .btn-warning {
+        background-color: #fcb045; /* Orange button */
+        border: none;
+      }
+      
+      .btn-warning:hover {
+        background-color: #ffa726; /* Lighter orange */
+      }
 }
