@@ -1,0 +1,7 @@
+@import '../mixins/button';
+@import '../abstracts/variables';
+.discover{
+    .btn{
+        @include orange-button(20px 40px, $font-20px,2em)
+    }
+}

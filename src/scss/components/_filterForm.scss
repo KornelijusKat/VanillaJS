@@ -1,0 +1,5 @@
+.filterForm{
+    .btn{
+        @include orange-button(10px 20px, $font-20px,2em)
+    }
+}

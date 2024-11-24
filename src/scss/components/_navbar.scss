@@ -1,0 +1,41 @@
+@import '../abstracts/variables';
+@import '../mixins/button';
+@import '../mixins/media';
+.navbar{
+    background-color: $color-primary;
+    .navbar-brand{
+        font-weight: 600;
+        color:$color-green;
+        font-size: $font-24px;
+        .fa-bowl-food{
+            color:#F39D1A;
+        }
+    }
+    #searchForm{
+        @include for-phone{
+            display: flex;
+            flex-direction: column;
+        }
+        @include for-tables{
+          
+        }
+    }
+    .nav-item a{
+            font-size: $font-20px;
+            color:$color-black;
+            font-weight: 500;
+    }
+    .btn{
+        @include for-phone{
+            margin-left: 0px !important;
+        }
+    }
+    .btn-outline-primary {
+        color: $color-secondary;
+        border-color: $color-secondary;  
+    }
+    .btn-outline-primary:hover {
+        background-color: $color-secondary; 
+        color: #fff; 
+    }
+}

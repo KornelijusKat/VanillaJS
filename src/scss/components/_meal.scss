@@ -1,0 +1,70 @@
+@import '../abstracts/variables';
+@import '../mixins/media';
+.mealCon{
+    width:375px;
+    @include for-phone{
+      width:100%;
+    }
+}
+#mealsRow{
+  justify-content: space-between;
+  @include for-tables{
+      justify-content: space-around;
+  }
+  .discover h2{
+    font-size: $font-46px;
+    font-weight: 600;
+  }
+  .discover p{
+    color: #7F7D7D;
+    font-size: $font-24px;
+    font-weight: 300;
+  }
+}
+.meal {
+    height: 100%; 
+    position: relative;
+    width:100%;
+    border: 1px solid #ddd; 
+    border-radius: 8px;
+    overflow: hidden;
+    @include for-phone{
+      max-width:100%;
+    } 
+    &__img-con {
+      width: 100%;
+      //height: 254px; 
+      overflow: hidden;
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
+    &__name {
+      padding: 16px;
+      text-align: left;
+
+      background-color: #ffffff; 
+      h2 {
+        font-size: $font-32px;
+        font-weight: 600;
+        margin-bottom:50px;
+      }
+      a {
+        position: absolute;
+        bottom:20px;
+        align-self:flex-end;
+        color:$color-secondary;
+        font-family: 400;
+        font-size: $font-16px;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+    
+}
+
+ 
+ 
+ 
