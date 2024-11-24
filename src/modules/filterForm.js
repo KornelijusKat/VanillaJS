@@ -1,4 +1,5 @@
 const filterForm = () =>{
+  // just a form for the filter to be added dynamically
    return  `<div class="container my-5">
     <form class="row g-3 align-items-center filterForm" id="filterForm" ">
 

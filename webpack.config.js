@@ -9,7 +9,8 @@ module.exports = {
     output:{
         path: path.resolve(__dirname, 'public'), // location for file generation
         filename: 'app.js', 
-        clean: true //clean after new generation so that old code can't impede functionality
+        clean: true, //clean after new generation so that old code can't impede functionality
+        publicPath: '/'
     },
     module:{
         rules: [

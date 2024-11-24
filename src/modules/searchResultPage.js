@@ -3,7 +3,7 @@ import filterForm from "./filterForm";
 import filterSubmitEvent from "./filterSubmitEvent";
 import mealDetailsPage from "./mealDetailsPage";
 import mealCard from "./mealCard";
-
+//Renders search results on to the page
 const searchResultsPage = (meals) =>{
   const contentBlock = document.querySelector('main')
   contentBlock.innerHTML = " ";
@@ -23,7 +23,7 @@ const searchResultsPage = (meals) =>{
       });
   }
   contentBlock.appendChild(row);
-  console.log(JSON.parse(localStorage.getItem(`meals`)));
+  //initializes the filters addevent and passes current meals
   filterSubmitEvent(JSON.parse(localStorage.getItem(`meals`)));
 }
 

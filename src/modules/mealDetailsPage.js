@@ -1,4 +1,5 @@
 const mealDetailsPage = (meal) =>{
+    // renders meal details to main
     const createdMeal = document.createElement('div');
     createdMeal.className = 'row';
     createdMeal.innerHTML=` 

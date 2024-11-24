@@ -4,6 +4,7 @@
 .navbar{
     background-color: $color-primary;
     .navbar-brand{
+        font-weight: 600;
         color:$color-green;
         font-size: $font-24px;
         .fa-bowl-food{
@@ -22,6 +23,7 @@
     .nav-item a{
             font-size: $font-20px;
             color:$color-black;
+            font-weight: 500;
     }
     .btn{
         @include for-phone{

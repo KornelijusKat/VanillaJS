@@ -1,4 +1,5 @@
 import ajaxService from "../modules/ajaxService";
+//class for MealDb api to construct urls and call appropriate endpoints
 class MealApi{
     constructor(baseUri){
         this.baseUri = baseUri;

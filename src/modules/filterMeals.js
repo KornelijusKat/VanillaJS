@@ -1,4 +1,5 @@
 const filterMeals = (meals, ingredient, category, area) =>{
+    // filtering meals by ingredient, category, area. Will filter by all inputed filters.
     return meals.filter(meal =>{
         const ingredients = Object.keys(meal)
             .filter(key => key.startsWith("strIngredient") && meal[key])

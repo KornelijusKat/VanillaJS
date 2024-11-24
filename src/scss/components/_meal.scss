@@ -11,6 +11,15 @@
   @include for-tables{
       justify-content: space-around;
   }
+  .discover h2{
+    font-size: $font-46px;
+    font-weight: 600;
+  }
+  .discover p{
+    color: #7F7D7D;
+    font-size: $font-24px;
+    font-weight: 300;
+  }
 }
 .meal {
     height: 100%; 
@@ -38,6 +47,7 @@
       background-color: #ffffff; 
       h2 {
         font-size: $font-32px;
+        font-weight: 600;
         margin-bottom:50px;
       }
       a {
@@ -45,6 +55,7 @@
         bottom:20px;
         align-self:flex-end;
         color:$color-secondary;
+        font-family: 400;
         font-size: $font-16px;
       }
       a:hover {

@@ -1,6 +1,7 @@
 import MealApi from "../Api/MealApi";
 import mealCard from "./mealCard";
 import mealDetailsPage from "./mealDetailsPage";
+// renders 6 random meals to main;
 const renderSixRandomMeals = () =>{
     const mealCon = document.createElement('div');
         mealCon.className = "row d-flex"
@@ -25,6 +26,7 @@ const renderSixRandomMeals = () =>{
                 createdMeal.className = "col-4 mt-5 mealCon"
                 createdMeal.innerHTML= mealCard(meal)
                 mealCon.appendChild(createdMeal);
+                // Makes the meal-link of the selected card to show a detailed meal
                 createdMeal.querySelector('.meal-link').addEventListener('click', (e) => {
                     e.preventDefault();
                     document.querySelector('main').innerHTML = ""

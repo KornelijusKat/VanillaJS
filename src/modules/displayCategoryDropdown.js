@@ -1,4 +1,5 @@
 const displayCategoryDropdown = () => {
+  //populates categoryDropdown from an array
     const dropdown = document.getElementById('categoryDropdown');
     dropdown.innerHTML = '';
     const categories = [

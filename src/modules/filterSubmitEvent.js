@@ -1,13 +1,10 @@
 import filterMeals from "./filterMeals";
 import searchResultsPage from "./searchResultPage";
-
+// filter submition event to take values, pass them and call the meals renderer
 const filterSubmitEvent = (meals)=>{
     const mealsForFilter = JSON.parse(JSON.stringify(meals));
-    console.log('hi');
-    console.log(document.querySelector(".filterForm"));
     document.querySelector("#filterBtn").addEventListener('click', (e) =>{
         e.preventDefault();
-        console.log('work');
         const ingredient = document.getElementById("ingredientInput").value;
         const category = document.getElementById("categoryInput").value;
         const area = document.getElementById("areaInput").value;
