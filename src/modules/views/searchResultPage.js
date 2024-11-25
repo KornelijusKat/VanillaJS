@@ -1,8 +1,7 @@
-import MealApi from "../Api/MealApi";
-import filterForm from "./filterForm";
-import filterSubmitEvent from "./filterSubmitEvent";
+import filterForm from "../ui/filterForm";
+import filterSubmitEvent from "../events/filterSubmitEvent";
 import mealDetailsPage from "./mealDetailsPage";
-import mealCard from "./mealCard";
+import mealCard from "../ui/mealCard";
 //Renders search results on to the page
 const searchResultsPage = (meals) =>{
   const contentBlock = document.querySelector('main')

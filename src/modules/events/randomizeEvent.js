@@ -1,5 +1,5 @@
 import renderRandomMeals from "./renderRandomMeal"
-import renderSixRandomMeals from "./renderSixRandomMeals";
+import renderSixRandomMeals from "../views/renderSixRandomMeals";
 
 const randomizeEvent = () =>{
     document.querySelector('main').addEventListener('click', (e) =>{

@@ -1,4 +1,4 @@
-import ajaxService from "../modules/ajaxService";
+import ajaxService from "../modules/services/ajaxService";
 //class for MealDb api to construct urls and call appropriate endpoints
 class MealApi{
     constructor(baseUri){

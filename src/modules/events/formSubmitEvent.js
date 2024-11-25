@@ -1,5 +1,5 @@
-import searchService from "./searchService";
-import storeSearches from "./storeSearches";
+import searchService from "../services/searchService";
+import storeSearches from "../services/storeSearches";
 const formSubmitEvent = ()=>{
     const queryArray = [];
     document.querySelector('form').addEventListener('submit',(e)=>{

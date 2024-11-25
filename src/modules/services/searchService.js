@@ -1,5 +1,5 @@
-import MealApi from "../Api/MealApi";
-import searchResultsPage from "./searchResultPage";
+import MealApi from "../../Api/MealApi";
+import searchResultsPage from "../views/searchResultPage";
 
 const searchService = (selectedValue,searchTerm) =>{
     const mealService = new MealApi('https://www.themealdb.com/api/json/v1/1');

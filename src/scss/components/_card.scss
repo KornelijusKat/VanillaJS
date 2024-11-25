@@ -1,5 +1,10 @@
+@import '../abstracts/variables';
 .card{
     border-radius: 2em;
     background-color: #ffffff;
-    
+    overflow: hidden;
+    &-header{
+        background-color: $color-secondary;
+        color:$color-primary;
+    }
 }

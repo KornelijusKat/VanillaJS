@@ -1,4 +1,4 @@
-import searchService from "./searchService";
+import searchService from "../services/searchService";
 const displaySearches = ()=>{
     // user icon functions as search
     document.querySelector('.user-history').addEventListener('click', (e)=>{
@@ -8,7 +8,7 @@ const displaySearches = ()=>{
         const searches = JSON.parse(localStorage.getItem(`searchedTerms`));
         const cardHeader = document.createElement('div');
         const card = document.createElement('div');
-        card.className = 'card shadow-sm';
+        card.className = 'card';
         cardHeader.className = 'card-header';
         const headerText = document.createElement('h4');
         headerText.className = 'mb-0';

@@ -1,12 +1,12 @@
 import './scss/style.scss';
 import * as bootstrap from 'bootstrap';
-import randomMealEvent from "./modules/randomMealEvent";
-import renderRandomMeals from "./modules/renderRandomMeal";
-import formSubmitEvent from "./modules/formSubmitEvent";
-import hideCategoryDropdown from "./modules/hideCategoryDropdown";
-import randomizeEvent from './modules/randomizeEvent';
-import renderSixRandomMeals from './modules/renderSixRandomMeals';
-import displaySearches from './modules/displaySearches';
+import randomMealEvent from "./modules/events/randomMealEvent";
+import renderRandomMeals from "./modules/events/renderRandomMeal";
+import formSubmitEvent from "./modules/events/formSubmitEvent";
+import hideCategoryDropdown from "./modules/services/hideCategoryDropdown";
+import randomizeEvent from './modules/events/randomizeEvent';
+import renderSixRandomMeals from './modules/views/renderSixRandomMeals';
+import displaySearches from './modules/views/displaySearches';
 
 renderSixRandomMeals();
 hideCategoryDropdown();

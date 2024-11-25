@@ -4,8 +4,9 @@
     border-radius: 8px;
     overflow: hidden; 
     &__img-con {
-        width: 254px;
-        height: 254px; 
+        margin-top:20px;
+        width: 30%;
+        height: auto; 
         overflow: hidden;
         img{
             width:100%;
@@ -15,5 +16,12 @@
     a{
         color:$color-secondary;
     }
+    h2{
+      font-size: $font-46px;
+    }
+    p{
+      font-size: $font-20px;
+    }
+    
   }
   

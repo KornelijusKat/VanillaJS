@@ -1,5 +1,5 @@
-import MealApi from "../Api/MealApi";
-import mealDetailsPage from "./mealDetailsPage";
+import MealApi from "../../Api/MealApi";
+import mealDetailsPage from "../views/mealDetailsPage";
 //clicking Random recipe link, renders a random meal with it's details
 const randomMealEvent = () =>{
     document.querySelector('.recipe').addEventListener('click',(e)=>{

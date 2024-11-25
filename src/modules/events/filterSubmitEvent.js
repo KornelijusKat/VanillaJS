@@ -1,5 +1,5 @@
-import filterMeals from "./filterMeals";
-import searchResultsPage from "./searchResultPage";
+import filterMeals from "../services/filterMeals";
+import searchResultsPage from "../views/searchResultPage";
 // filter submition event to take values, pass them and call the meals renderer
 const filterSubmitEvent = (meals)=>{
     const mealsForFilter = JSON.parse(JSON.stringify(meals));

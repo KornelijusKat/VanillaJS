@@ -1,4 +1,4 @@
-import renderSixRandomMeals from "./renderSixRandomMeals";
+import renderSixRandomMeals from "../views/renderSixRandomMeals";
 //renders 6 random meals when home link is pressed;
 const renderRandomMeals = ()=>{
     document.querySelector('.home').addEventListener('click',(e)=>{

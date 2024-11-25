@@ -8,6 +8,7 @@
 }
 #mealsRow{
   justify-content: space-between;
+  margin-bottom: 20px;
   @include for-tables{
       justify-content: space-around;
   }

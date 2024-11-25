@@ -1,5 +1,5 @@
-import MealApi from "../Api/MealApi";
-import mealCard from "./mealCard";
+import MealApi from "../../Api/MealApi";
+import mealCard from "../ui/mealCard";
 import mealDetailsPage from "./mealDetailsPage";
 // renders 6 random meals to main;
 const renderSixRandomMeals = () =>{

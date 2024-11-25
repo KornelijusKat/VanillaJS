@@ -1,4 +1,4 @@
-import displayCategoryDropdown from "./displayCategoryDropdown";
+import displayCategoryDropdown from "../ui/displayCategoryDropdown";
 // function to hide and show categories during search
 const hideCategoryDropdown = () =>{
     document.getElementById('searchBar').addEventListener('focus', () => {
